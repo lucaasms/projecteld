@@ -1,0 +1,110 @@
+.signup_button {
+    background-color: #FD4D46;
+    border: none;
+    color: white;
+    font-weight: bold;
+    border-radius: 25px;
+    padding: 4px 10px 4px 10px;
+    cursor: pointer;
+    text-align: center;
+    margin: 10px;
+    font-size: smaller;
+}
+
+.login_button {
+    background-color: white;
+    border-color: #E0E0E0;
+    color: #FD4D46;
+    font-weight: bold;
+    border-radius: 25px;
+    padding: 3px 10px 3px 10px;
+    cursor: pointer;
+    text-align: center;
+    font-size: smaller;
+    margin: 10px;
+    border-style: solid;
+    border-width: 2px;
+}
+
+.signup_button, .signup_button:hover{
+    text-decoration: none;
+    color: white;
+}
+
+.login_button, .login_button:hover{
+    text-decoration: none;
+    color: #FD4D46;
+}
+
+.signup_body{
+    background-color: #F2F1EE;
+    padding: 1%;
+    margin-top: 60px;
+}
+
+.signup_form {
+    width: 30%;
+    margin: auto;
+}
+
+.centered_text {
+    text-align: center;
+}
+/* #companyInput, #segmentInput, #usersInput, #nameInput, #emailInput, #telInput, #passwordInput {
+    width: 50%;
+    margin: auto;
+} */
+
+.usersInputInfo {
+    color: black;
+    text-align: left;
+}
+
+.global_footer {
+    padding: 2rem;
+    background-color: #FD4D46;
+    
+    margin-top: 8px;
+    display: flex;
+    line-height: 20px;
+}
+
+.footer_container {
+    margin-right: 15px;
+    width: 50%;
+}
+
+.footer_title {
+    padding: 6%;
+    color: white;
+    font-weight: bold;
+    font-size: large;
+}
+
+.footer_list {
+    text-decoration: none;
+    color: white;
+    padding: .15rem 0;
+    margin: .25rem 0;
+    font-size: medium;
+}
+
+p {
+    color: white;
+    font-size: large;  
+}
+
+ol, ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+h4 {
+    color: white;
+    font-size: large;
+}
+
+footer a {
+    display: flex;
+    align-items: center;
+  }
