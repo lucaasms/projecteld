@@ -5,4 +5,12 @@ import { Component } from '@angular/core';
     styleUrls: ['../app.component.css']
 })
 
-export class SignupComponent {}
+export class SignupComponent {
+    
+    show: boolean = false;
+
+    toggleShow(){
+        this.show = !this.show
+    }
+
+}

@@ -28,12 +28,17 @@
 
 .signup_button, .signup_button:hover{
     text-decoration: none;
-    color: white;
+    color: white !important;
+}
+
+.logo_link, .logo_link:hover {
+    text-decoration: none;
+    color: black !important;
 }
 
 .login_button, .login_button:hover{
     text-decoration: none;
-    color: #FD4D46;
+    color: #FD4D46 !important;
 }
 
 .signup_body{
@@ -50,10 +55,6 @@
 .centered_text {
     text-align: center;
 }
-/* #companyInput, #segmentInput, #usersInput, #nameInput, #emailInput, #telInput, #passwordInput {
-    width: 50%;
-    margin: auto;
-} */
 
 .usersInputInfo {
     color: black;
@@ -107,4 +108,133 @@ h4 {
 footer a {
     display: flex;
     align-items: center;
+}
+
+.home_body {
+    margin-top: 60px;
+}
+
+.banner_text {
+    color: black;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.banner_header {
+    display: inline;
+    color: black;
+    font-weight: bolder;
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+.check_container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 25px;
+    font-size: 18px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.check_container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border-radius: 25px;
+  }
+
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+
+  .container input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  .container .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 8px;
+    height: 12px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+
+  .container input:checked ~ .checkmark {
+    background-color: #FD4D46;
+  }
+
+  .trial_header {
+      font-size: 50px;
+      color: black;
+  }
+
+  .trial_text {
+    color: black;
+    font-size: 25px;
+    margin-bottom: 0;
+}
+
+  .banner_trial {
+      text-align: center;
+      padding: 5rem;
+      background-color: #F2F1EE;
+      width: 100%;
+  }
+
+  @media only screen and (max-width: 992px) {
+    .toggle_hidden {
+        display: none;
+    }
+  }
+
+  .purchase_title {
+      color: black;
+      font-size: xx-large;
+      text-align: center;
+      font-weight: 2000;
+  }
+
+  .purchase_text {
+      color: black;
+      font-size: 25px;
+      text-align: center;
+  }
+
+  .contacts_card {
+      width: 60%;
+      margin: 0 auto;
+      border-color: black;
+  }
+ 
+  .external_website {
+      color: #FD4D46;
+      text-decoration: none;
+  }
+
+  .small_text {
+      color: black;
+      font-size: small;
+      padding-top: 2rem;
   }

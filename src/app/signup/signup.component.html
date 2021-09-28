@@ -1,4 +1,4 @@
-<div class="signup_body">
+<div *ngIf="!show" class="signup_body">
     <h1 class="centered_text">Free-Trial Sign Up</h1>
     <h2 class="centered_text">Get started and experience conneqt today</h2>
 <form action="" class="signup_form">
@@ -26,6 +26,19 @@
     </div>
 </form>
     <div class="centered_text">
-        <a style="text-align: center;" class= "signup_button" target="_blank" rel="noopener" href="https://twitter.com/angular" >Sign Up And Try For Free</a>
+        <a style="text-align: center;" class= "signup_button" onclick="return false" href="#" (click)="toggleShow()">Sign Up And Try For Free</a>
+    </div>
+</div>
+
+<div *ngIf="show" class="signup_body">
+    <div class="row">
+        <div class="banner_trial">
+            <p class="trial_header">Thank You For Signing Up!</p>
+            <p class="trial_text">Get started and experience Conneqt today.</p>
+            <p class="small_text">A confirmation email with your credentials was sent to your email address.</p>
+            <div style="margin-top: 10px;">
+                <a class= "signup_button" href="" >Get started with Conneqt</a>
+            </div>
+        </div>
     </div>
 </div>
