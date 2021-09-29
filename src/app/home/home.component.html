@@ -1,18 +1,20 @@
 
-<div class="container col-xl-12 home_body">
-    <div style="background-color: #F2F1EE;" class="row">
-        <div style="padding: 6rem;" class="col-md-7 col-12">
+<div class="container home_body">
+    <div style="background-color: #F2F1EE;" class="row column_reverse">
+        <div style="padding: 6rem;" class="col-xl-7 col-12">
             <p class="banner_text">Making distances a meaningless thing.</p>
             <p class="banner_header">We are </p><p class="banner_header" style="color: #FD4D46;">conneqt</p>
             <br><br>
             <a style="margin: 0" class= "signup_button" rel="noopener" href="/signup" >Sign Up For a Free Trial</a>
+            <br><br>
+            <a class="login_button_resp" target="_blank" rel="noopener" href="" >Log In</a>
         </div>
-        <div class="col-md-5 col-12">
-            <img src="../../assets/banner.png" alt="">
+        <div style="padding-right: 0;" class="col-xl-5 col-12">
+            <img width="100%" src="../../assets/banner.png" alt="">
         </div>
     </div>
     <div class="row">
-        <div class="col-lg-6 toggle_hidden">
+        <div class="col-lg-6 toggle_hidden_devices">
             <img width="543px" src="../../assets/devices.PNG" alt="">
         </div>
         <div class="col-lg-6 col-12" style="padding: 4rem;">
@@ -45,46 +47,57 @@
             <p class="trial_text">See how Conneqt can solve your communication needs.</p>
             <p class="trial_text">Start a trial now.</p>
             <div style="margin-top: 10px;">
-                <a class= "signup_button" target="_blank" rel="noopener" href="https://twitter.com/angular" >Sign Up For a Free Trial</a>
+                <a class= "signup_button" href="/signup" >Sign Up For a Free Trial</a>
             </div>
         </div>
     </div>
-    <div style="padding: 5rem;" class="row">
+    <div style="padding: 5rem;" class="row small_row">
         <div class="col-12">
             <p class="purchase_title">Or purchase a license</p>
-            <p style="margin-bottom: 3rem;" class="purchase_text">Contact your local reseller to request a license trial or purchase Conneqt</p>
+            <p style="margin-bottom: 3rem;" class="purchase_text toggle_hidden">Contact your local reseller to request a license trial
+                or purchase Conneqt</p>
         </div>
         <div class="col-12">
             <p class="purchase_text">Global Reseller</p>
             <div class="card contacts_card">
                 <ul class="list-group list-group-flush">
                     <div class="row">
-                        <div class="col-6">
+                        <div class="col-8 col-sm-9 col-md-10 col-lg-6 col-xl-6">
                             <li class="list-group-item">John Appleseed - Authorized Reseller</li>
                         </div>
-                        <div class="col-3">
-                            <a class="external_website" href="#"><li class="list-group-item">Company Website <i class="fa fa-external-link-alt"></i></li></a>
+                        <div class="col-1 col-sm-2 col-md-2 col-lg-3 col-xl-3">
+                            <a class="external_website" href="#">
+                                <li class="list-group-item"><span *ngIf="innerWidth > 1150">Company Website </span> <i
+                                        class="fa fa-external-link-alt"></i>
+                                </li>
+                            </a>
                         </div>
-                        <div class="col-3">
-                            <li class="list-group-item"><i class="fas fa-phone-alt" style="margin-right: 5px;"></i>469-844-8261</li>
+                        <div *ngIf="innerWidth > 1150" class="col-1 col-sm-2 col-md-2 col-lg-3 col-xl-3">
+                            <li class="list-group-item"><i class="fas fa-phone-alt"
+                                    style="margin-right: 5px;"></i>469-844-8261</li>
                         </div>
                     </div>
                 </ul>
-              </div>
+            </div>
         </div>
         <div class="col-12">
             <p style="padding-top: 1rem;" class="purchase_text">Brazil</p>
             <div class="card contacts_card">
                 <ul class="list-group list-group-flush">
                     <div class="row">
-                        <div class="col-6">
+                        <div class="col-8 col-sm-9 col-md-10 col-lg-6 col-xl-6">
                             <li class="list-group-item">Ultratech Revendedora</li>
                         </div>
-                        <div class="col-3">
-                            <a class="external_website" href="#"><li class="list-group-item">Company Website <i class="fa fa-external-link-alt"></i></li></a>
+                        <div class="col-1 col-sm-2 col-md-2 col-lg-3 col-xl-3">
+                            <a class="external_website" href="#">
+                                <li class="list-group-item"><span *ngIf="innerWidth > 1150">Company Website </span> <i
+                                        class="fa fa-external-link-alt"></i>
+                                </li>
+                            </a>
                         </div>
-                        <div class="col-3">
-                            <li class="list-group-item"><i class="fas fa-phone-alt" style="margin-right: 5px;"></i>469-844-8261</li>
+                        <div *ngIf="innerWidth > 1150" class="col-1 col-sm-2 col-md-2 col-lg-3 col-xl-3">
+                            <li class="list-group-item"><i class="fas fa-phone-alt"
+                                    style="margin-right: 5px;"></i>469-844-8261</li>
                         </div>
                     </div>
                 </ul>
@@ -93,14 +106,19 @@
             <div class="card contacts_card">
                 <ul class="list-group list-group-flush">
                     <div class="row">
-                        <div class="col-6">
+                        <div class="col-8 col-sm-9 col-md-10 col-lg-6 col-xl-6">
                             <li class="list-group-item">BlueFin</li>
                         </div>
-                        <div class="col-3">
-                            <a class="external_website" href=""><li class="list-group-item">Company Website <i class="fa fa-external-link-alt"></i></li></a>
+                        <div class="col-1 col-sm-2 col-md-2 col-lg-3 col-xl-3">
+                            <a class="external_website" href="#">
+                                <li class="list-group-item"><span *ngIf="innerWidth > 1150">Company Website </span> <i
+                                        class="fa fa-external-link-alt"></i>
+                                </li>
+                            </a>
                         </div>
-                        <div class="col-3">
-                            <li class="list-group-item"><i class="fas fa-phone-alt" style="margin-right: 5px;"></i>469-844-8261</li>
+                        <div *ngIf="innerWidth > 1150" class="col-1 col-sm-2 col-md-2 col-lg-3 col-xl-3">
+                            <li class="list-group-item"><i class="fas fa-phone-alt"
+                                    style="margin-right: 5px;"></i>469-844-8261</li>
                         </div>
                     </div>
                 </ul>
@@ -109,14 +127,19 @@
             <div class="card contacts_card">
                 <ul class="list-group list-group-flush">
                     <div class="row">
-                        <div class="col-6">
+                        <div class="col-8 col-sm-9 col-md-10 col-lg-6 col-xl-6">
                             <li class="list-group-item">Gold Comm Sistemas</li>
                         </div>
-                        <div class="col-3">
-                            <a class="external_website" href=""><li class="list-group-item">Company Website <i class="fa fa-external-link-alt"></i></li></a>
+                        <div class="col-1 col-sm-2 col-md-2 col-lg-3 col-xl-3">
+                            <a class="external_website" href="#">
+                                <li class="list-group-item"><span *ngIf="innerWidth > 1150">Company Website </span> <i
+                                        class="fa fa-external-link-alt"></i>
+                                </li>
+                            </a>
                         </div>
-                        <div class="col-3">
-                            <li class="list-group-item"><i class="fas fa-phone-alt" style="margin-right: 5px;"></i>469-844-8261</li>
+                        <div *ngIf="innerWidth > 1150" class="col-1 col-sm-2 col-md-2 col-lg-3 col-xl-3">
+                            <li class="list-group-item"><i class="fas fa-phone-alt"
+                                    style="margin-right: 5px;"></i>469-844-8261</li>
                         </div>
                     </div>
                 </ul>
@@ -125,17 +148,22 @@
             <div class="card contacts_card">
                 <ul class="list-group list-group-flush">
                     <div class="row">
-                        <div class="col-6">
+                        <div class="col-8 col-sm-9 col-md-10 col-lg-6 col-xl-6">
                             <li class="list-group-item">Centraltek</li>
                         </div>
-                        <div class="col-3">
-                           <a class="external_website" href=""><li class="list-group-item">Company Website <i class="fa fa-external-link-alt"></i></li></a> 
+                        <div class="col-1 col-sm-2 col-md-2 col-lg-3 col-xl-3">
+                            <a class="external_website" href="#">
+                                <li class="list-group-item"><span *ngIf="innerWidth > 1150">Company Website </span> <i
+                                        class="fa fa-external-link-alt"></i>
+                                </li>
+                            </a>
                         </div>
-                        <div class="col-3">
-                            <li class="list-group-item"><i class="fas fa-phone-alt" style="margin-right: 5px;"></i>469-844-8261</li>
+                        <div *ngIf="innerWidth > 1150" class="col-1 col-sm-2 col-md-2 col-lg-3 col-xl-3">
+                            <li class="list-group-item"><i class="fas fa-phone-alt"
+                                    style="margin-right: 5px;"></i>469-844-8261</li>
                         </div>
                     </div>
                 </ul>
             </div>
+        </div>
     </div>
-</div>
